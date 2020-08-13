@@ -30,6 +30,19 @@ Demo 代码可以新建一个或多个文件（不限），
 }
 ```
 
+```css
+<style lang='scss'>
+.container{
+  display:flex;
+  justify-content: space-between;
+  align-items: stretch;
+    div:first-child{
+      flex:1;
+    }
+}
+</style>
+```
+
 ## Q2
 
 你用过哪些 CSS 的方法论和工具  
@@ -44,4 +57,4 @@ Demo 代码可以新建一个或多个文件（不限），
 > }
 > ```
 
-答：
+答：稍微了解过BEM，在处理less预编译上样式命名上使用

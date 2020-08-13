@@ -4,6 +4,21 @@
 // * ---------------- 解决下文中缺少 clone 函数的问题……
 // 在这里写代码……
 
+function clone(obj){
+	var newJsonObj = {};
+	newJsonObj = JSON.parse(JSON.stringify(obj));
+	for (items in obj) {
+        if (typeof obj[items] == "function" || typeof obj[items] == "undefined" || obj[items] instanceof RegExp) {
+            newJsonObj[items] = obj[items];
+        }
+    }
+    var newObj = new obj.constructor;
+    for (items in newJsonObj) {
+        newObj[items] = newJsonObj[items]
+    }
+    return newObj;
+}
+
 // * ---------------- 实现的效果：
 
 {

@@ -11,8 +11,15 @@ Git 是一个广泛使用的版本管理工具，适合团队开发。
 
 答：
 
+>git clone 克隆远程仓库  
+>git init 初始化  
+>git add 添加到缓存区  
+>git commit 提交到本地仓库  
+>git pull  
+>git push
+
 ## Q2
 
 你知道和用过哪些 Git 的方法论和技巧
 
-答：
+答：可以在.gitignore文件中写入不需要git管理的文件
